@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:background="@color/colorAccent"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:text="New Order"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/title"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/txt_logout"
+                android:layout_width="wrap_content"
+                android:text="Log out"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/edittextsize"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:background="@color/colorAccent"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_store_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/store_code"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittextsize"/>
+                <!-- <EditText
+                     android:id="@+id/edt_store_code"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingTop="10dp"
+                     android:paddingBottom="10dp"
+                     android:layout_marginLeft="5dp"
+                     android:background="@drawable/edittext_field_background_dark_gray"
+                     android:layout_marginRight="15dp"
+                     android:hint="Enter Store Code"
+                     android:imeOptions="actionNext"
+                     android:gravity="left"
+                     android:textColorHint="@color/black"
+                     android:textColor="@color/black"
+                     android:paddingLeft="10dp"
+                     android:visibility="visible"
+                     android:textSize="@dimen/edittextsize"
+                     android:maxLength="30"
+                     />-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_store_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edittext_field_background_dark_gray"
+                    android:ems="10"
+                    android:visibility="visible"
+                    android:singleLine="true"
+                    android:hint="Enter Store Code"
+                    android:textColorHint="@color/black_opacity"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittextsize">
+
+
+                </AutoCompleteTextView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:background="@color/colorAccent"/>
+
+
+                <TextView
+                    android:id="@+id/txt_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/order_number"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittextsize"/>
+
+                <EditText
+                    android:id="@+id/edt_order_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittext_field_background_dark_gray"
+                    android:layout_marginRight="15dp"
+                    android:hint="Enter Order Number"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:gravity="left"
+                    android:textColorHint="@color/black_opacity"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/edittextsize"
+                    android:maxLength="20"
+                    android:layout_margin="5dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:background="@color/colorAccent"/>
+                <TextView
+                    android:id="@+id/txt_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Status"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittextsize"/>
+
+                <FrameLayout
+                    android:id="@+id/llSipner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_field_background_dark_gray"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Spinner
+                        android:id="@+id/simpleSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:background="@null"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_status_set"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:gravity="left"
+                        android:textSize="@dimen/edittextsize"
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_down"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="8dp"
+                        android:src="@mipmap/down_arrow" />
+
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/date"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittextsize"/>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext_field_background_dark_gray"
+                    android:layout_marginTop="2dp">
+
+                    <EditText
+                        android:id="@+id/edt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edittextsize"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        />
+                    <ImageView
+                        android:id="@+id/img_driver"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/calendar" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:background="@color/colorAccent"/>
+
+
+                <TextView android:id="@+id/txt_next"
+                    android:layout_width="match_parent"
+                    android:text="Next"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="9dp"
+                    android:background="@color/colorAccent"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

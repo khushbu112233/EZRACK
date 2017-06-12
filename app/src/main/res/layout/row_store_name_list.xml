@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll1"
+    android:layout_height="40dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <TextView
+        android:id="@+id/txtstore_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="Select Broker Server"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

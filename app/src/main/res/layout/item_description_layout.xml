@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:text="Item Description"
+                android:layout_height="50dp"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/title"
+                android:layout_gravity="center"
+                android:gravity="center"  />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_corner_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Corner Post 7' gray/silver vein"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittextsize"/>
+                <EditText
+                    android:id="@+id/edt_corner_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_field_background_dark_gray"
+                    android:layout_marginRight="15dp"
+                    android:hint="Enter Quantity"
+                    android:imeOptions="actionNext"
+                    android:gravity="left"
+                    android:textColorHint="@color/black_opacity"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/edittextsize"
+                    android:maxLength="20"
+                    android:layout_margin="5dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_drb_48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="10dp"
+                            android:visibility="visible"
+                            android:layout_gravity="left"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="DRB 48''gray/silver vein"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittextsize"/>
+                        <EditText
+                            android:id="@+id/edt_drb_48"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="number"
+                            android:background="@drawable/edittext_field_background_dark_gray"
+                            android:hint="Enter Quantity"
+                            android:imeOptions="actionNext"
+                            android:gravity="left"
+                            android:textColorHint="@color/black_opacity"
+                            android:textColor="@color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="@dimen/edittextsize"
+                            android:maxLength="20"
+                            android:layout_margin="5dp"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:visibility="gone"
+                        android:background="@color/black"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txt_drb_40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="left"
+                            android:visibility="visible"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="DRB 40''gray/silver vein"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittextsize"/>
+                        <EditText
+                            android:id="@+id/edt_drb_40"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:inputType="number"
+                            android:background="@drawable/edittext_field_background_dark_gray"
+                            android:hint="Enter Quantity"
+                            android:imeOptions="actionNext"
+                            android:gravity="left"
+                            android:textColorHint="@color/black_opacity"
+                            android:textColor="@color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="@dimen/edittextsize"
+                            android:maxLength="20"
+                            android:layout_margin="5dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:background="@color/black"/>
+                <TextView
+                    android:id="@+id/txt_corner_post_7_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Corner Post 7' Black USED"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:textSize="@dimen/edittextsize"/>
+                <EditText
+                    android:id="@+id/edt_corner_post_7_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_field_background_dark_gray"
+                    android:layout_marginRight="15dp"
+                    android:hint="Enter Quantity"
+                    android:imeOptions="actionNext"
+                    android:gravity="left"
+                    android:textColorHint="@color/black_opacity"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/edittextsize"
+                    android:maxLength="20"
+                    android:layout_margin="5dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:background="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_drb_48_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="5dp"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="10dp"
+                            android:textStyle="bold"
+                            android:text="DRB 48'' Black USED"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittextsize"
+                            android:visibility="visible" />
+
+                        <EditText
+                            android:id="@+id/edt_drb_48_black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:inputType="number"
+                            android:background="@drawable/edittext_field_background_dark_gray"
+                            android:hint="Enter Quantity"
+                            android:imeOptions="actionNext"
+                            android:gravity="left"
+                            android:textColorHint="@color/black_opacity"
+                            android:textColor="@color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="@dimen/edittextsize"
+                            android:maxLength="20"
+                            android:layout_margin="5dp"
+                            />
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:visibility="gone"
+                        android:background="@color/black"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.50"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_drb_40_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="left"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="DRB 40'' Black USED"
+                            android:textColor="@color/black"
+                            android:visibility="visible"
+                            android:textSize="@dimen/edittextsize"/>
+                        <EditText
+                            android:id="@+id/edt_drb_40_black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:inputType="number"
+                            android:background="@drawable/edittext_field_background_dark_gray"
+                            android:hint="Enter Quantity"
+                            android:imeOptions="actionNext"
+                            android:gravity="left"
+                            android:textColorHint="@color/black_opacity"
+                            android:textColor="@color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="@dimen/edittextsize"
+                            android:maxLength="20"
+                            android:layout_margin="5dp"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_shelving_40_48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Shelving 40*48'' "
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittextsize"/>
+                <EditText
+                    android:id="@+id/edt_shelving_40_48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_field_background_dark_gray"
+                    android:layout_marginRight="15dp"
+                    android:hint="Enter Quantity"
+                    android:imeOptions="actionNext"
+                    android:gravity="left"
+                    android:textColorHint="@color/black_opacity"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/edittextsize"
+                    android:maxLength="20"
+                    android:layout_margin="5dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:background="@color/black"/>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/txt_corner_post_7_purple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="7dp"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:layout_gravity="left"
+                    android:visibility="visible"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Corner Post 7' purple "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittextsize"/>
+                <EditText
+                    android:id="@+id/edt_corner_post_7_purple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_field_background_dark_gray"
+                    android:layout_marginRight="15dp"
+                    android:hint="Enter Quantity"
+                    android:imeOptions="actionDone"
+                    android:gravity="left"
+                    android:textColorHint="@color/black_opacity"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/edittextsize"
+                    android:maxLength="20"
+                    android:layout_margin="5dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:background="@color/black"/>
+                <TextView android:id="@+id/txt_next"
+                    android:layout_width="match_parent"
+                    android:text="Place Order"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/title"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="9dp"
+                    android:background="@color/colorAccent"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

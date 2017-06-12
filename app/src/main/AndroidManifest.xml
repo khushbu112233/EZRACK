@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ezracks.com.ezracks">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /><!--
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".ezracks.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ezracks.NewOrderActivity"
+            android:label="@string/title_activity_new_order"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ezracks.ReportActivity"
+            android:label="@string/title_activity_report"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ezracks.BaseActivity"
+            android:label="@string/title_activity_base"></activity>
+
+        <activity
+            android:name=".ezracks.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            ></activity>
+        <activity
+            android:name=".ezracks.ChangePasswordActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            ></activity>
+        <activity
+            android:name=".ezracks.ItemDescriptionActivity"
+            android:label="@string/title_activity_item_description"
+            android:windowSoftInputMode="stateAlwaysHidden"
+
+            ></activity>
+
+        <activity
+            android:name=".ezracks.StoreDetailsActivity"
+            android:label="@string/title_activity_store_details"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            ></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c4f7f02b4bbc047ab2260be81785202ec63c9c63" />
+    </application>
+
+</manifest>
